@@ -1,0 +1,14 @@
+C:\Users\johan\source\repos\MiniGameCS\MiniGameCS\bin\Debug\net6.0\MiniGameCS.exe
+C:\Users\johan\source\repos\MiniGameCS\MiniGameCS\bin\Debug\net6.0\MiniGameCS.deps.json
+C:\Users\johan\source\repos\MiniGameCS\MiniGameCS\bin\Debug\net6.0\MiniGameCS.runtimeconfig.json
+C:\Users\johan\source\repos\MiniGameCS\MiniGameCS\bin\Debug\net6.0\MiniGameCS.dll
+C:\Users\johan\source\repos\MiniGameCS\MiniGameCS\bin\Debug\net6.0\MiniGameCS.pdb
+C:\Users\johan\source\repos\MiniGameCS\MiniGameCS\obj\Debug\net6.0\MiniGameCS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johan\source\repos\MiniGameCS\MiniGameCS\obj\Debug\net6.0\MiniGameCS.AssemblyInfoInputs.cache
+C:\Users\johan\source\repos\MiniGameCS\MiniGameCS\obj\Debug\net6.0\MiniGameCS.AssemblyInfo.cs
+C:\Users\johan\source\repos\MiniGameCS\MiniGameCS\obj\Debug\net6.0\MiniGameCS.csproj.CoreCompileInputs.cache
+C:\Users\johan\source\repos\MiniGameCS\MiniGameCS\obj\Debug\net6.0\MiniGameCS.dll
+C:\Users\johan\source\repos\MiniGameCS\MiniGameCS\obj\Debug\net6.0\refint\MiniGameCS.dll
+C:\Users\johan\source\repos\MiniGameCS\MiniGameCS\obj\Debug\net6.0\MiniGameCS.pdb
+C:\Users\johan\source\repos\MiniGameCS\MiniGameCS\obj\Debug\net6.0\MiniGameCS.genruntimeconfig.cache
+C:\Users\johan\source\repos\MiniGameCS\MiniGameCS\obj\Debug\net6.0\ref\MiniGameCS.dll
