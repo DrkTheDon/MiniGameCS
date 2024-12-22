@@ -4,4 +4,4 @@ Multiple minigames exclusively for console, written in c#. This is just so I can
 This currently is just made for Windows OS, I will implement UNIX soon.
 
 ## Preview
-![image](https://ibb.co/8m9kRH8)
+![preview_image](https://i.ibb.co/fXHJKs0/Mini-Game-CS.png)
