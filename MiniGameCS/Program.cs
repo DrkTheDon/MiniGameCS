@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading;
 
 class MiniGameCSharp
@@ -8,10 +8,7 @@ class MiniGameCSharp
     static int rock;
     static int scissors;
 
-    static void Main(string[] args)
-    {
-        ChoiceMenu(); // Entry point
-    }
+
 
     static void Game()
     {
@@ -119,8 +116,7 @@ class MiniGameCSharp
                     break;
 
                 case 3:
-                    Console.WriteLine("Hangman is under development.");
-                    Thread.Sleep(2000);
+                    hangman();
                     break;
 
                 case 4:
@@ -162,5 +158,77 @@ class MiniGameCSharp
             3 => "Scissors",
             _ => "Unknown"
         };
+    }
+
+    static void hangman()
+    {
+        string[] words = { "COMPUTER", "PROGRAMMING", "SOFTWARE", "DEBUGGING", "COMPILER", "DEVELOPER", "ALGORITHM", "APPLICATION" };
+        Random random = new Random();
+        string wordToGuess = words[random.Next(0, words.Length)];
+        char[] wordState = new char[wordToGuess.Length];
+        int tries = 0;
+        bool wordIsGuessed = false;
+        int lettersGuessed = 0;
+        int maxTries = 15;
+
+        // Initialize word state
+        for (int i = 0; i < wordState.Length; i++)
+        {
+            wordState[i] = '_';
+        }
+
+        // Game loop
+        while (!wordIsGuessed && tries < maxTries)
+        {
+            Console.Clear();
+            Console.WriteLine("Welcome to Hangman!");
+            Console.WriteLine("Current word: " + string.Join(" ", wordState));
+            Console.WriteLine("Tries remaining: " + (maxTries - tries));
+            Console.WriteLine("Enter a letter: ");
+            char input = Console.ReadLine()[0];
+            input = Char.ToUpper(input); // Make all the chars uppercase
+            // Check if the letter has already been guessed
+            bool letterGuessed = false;
+            for (int i = 0; i < wordState.Length; i++)
+            {
+                if (wordToGuess[i] == input)
+                {
+                    wordState[i] = input;
+                    lettersGuessed++;
+                    letterGuessed = true;
+                }
+            }
+            if (!letterGuessed)
+            {
+                tries++;
+            }
+            // Check if the word has been guessed
+            if (lettersGuessed == wordState.Length)
+            {
+                wordIsGuessed = true;
+            }
+        }
+        Console.Clear();
+        if (wordIsGuessed)
+        {
+            Console.WriteLine("Congratulations! You guessed the word: " + wordToGuess);
+        }
+        else
+        {
+            Console.WriteLine("Out of tries! The word was: " + wordToGuess);
+        }
+        Console.WriteLine("Press any key to continue...");
+        Console.ReadKey();
+        Console.WriteLine("Would you like to play again? (yes/no)");
+        string response = Console.ReadLine();
+        if (response == "yes")
+        {
+            hangman();
+        }
+
+    }
+    static void Main(string[] args)
+    {
+        ChoiceMenu(); // Entry point
     }
 }
